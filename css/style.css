@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(200,200,200);
+    margin: 0px;
+}
+
+@font-face {
+     font-family: magneto;
+     src: url(css/magneto.ttf);
+}
+
+#info {
+    position: absolute;
+    top: 0px; 
+    width: 100%;
+    height: 86px;
+    color: #ffffff;
+    font-family:Monospace;
+    font-size:13px;
+    font-weight: bold;
+    text-align:center;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, white , rgba(51, 81, 132, 0.25));
+    border-image-slice: 1;
+}
+
+.avatar {
+    width: 10%;
+    height: auto;
+}
+  @media screen and (max-width: 600px) {
+    .avatar {
+        width: 60px;
+        left: 50px;
+    }
+      }
+#date {
+float: right;
+display: block;
+}
+
+a {
+text-decoration: none;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: magneto;
+}
+
+.topnav a:hover {
+  box-shadow:inset 0px 0px 5px black;
+  color: white;
+  transition: all 0.5s ease;
+
+  
+}
+
+.topnav .icon {
+  display: none;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+#container {
+    position:fixed;
+    left:0;
+    top:0;
+}
+.info {
+    overflow-y:scroll; 
+}
